@@ -1,11 +1,12 @@
 
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { GlobalContext } from '../../../context/SearchContext';
 
 import './style.css';
 
 const SmallSearchbar = () => {
-
+  const { favourites,addHeadlines,addToFavourites,removeFromFavourites} = useContext(GlobalContext);
   const [nameQuery,setNameQuery] = useState("");
   const [hideResult,sethideResult] = useState(true);
   const [isHovering, setIsHovering] = useState(false);
@@ -148,7 +149,7 @@ const SmallSearchbar = () => {
 
           <button className="action-btn">
             <ion-icon name="heart-outline"></ion-icon>
-            <span className="count">0</span>
+            <span className="count">{favourites.length}</span>
           </button>
         
         </div>

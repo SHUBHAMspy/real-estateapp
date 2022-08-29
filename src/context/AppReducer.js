@@ -34,7 +34,7 @@ export default (state, action) => {
       return {
         ...state,
         favourites: state.favourites.filter(
-          (favourite) => favourite.title !== action.payload.title
+          (favourite) => favourite.id !== action.payload.id
         ),
         
       };
