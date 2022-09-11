@@ -53,8 +53,8 @@ export const propertiesData = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: House2,
     
-    country: 'Canada',
-    address: '798 Talbot St. Bridgewater, NJ 08807',
+    country: 'India',
+    address: '798 Talbot St. Bridgewater, Goa 08807',
     bedrooms: '6',
     bathrooms: '3',
     surface: '4200 sq ft',
@@ -308,8 +308,8 @@ export const propertiesData = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: Apartment5,
     
-    country: 'United States',
-    address: '28 Westport Dr. Warminster, PA 18974',
+    country: 'India',
+    address: '28 Westport Dr. Warminster, Mumbai 18974',
     bedrooms: '3',
     bathrooms: '1',
     surface: '1000 sq ft',

@@ -13,27 +13,6 @@ const SmallSearchbar = () => {
   const [isHoveringUser, setIsHoveringUser] = useState(false);
   const navigate = useNavigate();
   const credentials = JSON.parse(localStorage.getItem('credentials'))
-  // const [getProduct,{loading,error,data}] = useLazyQuery(getProductByName,{
-  //   variables:{
-  //     "filters": {
-  //       "name": {
-  //         "contains": nameQuery
-  //       }
-  //     }
-  //   }
-  // })
-
-  // useEffect(() => {
-  //   if(nameQuery.length > 1 ){
-  //     getProduct();
-  //     sethideResult(false);
-  //   }
-  //   else{
-  //     sethideResult(true);
-  //   }
-  // }, [nameQuery])
-  
-  
   const handleChange=(e)=>{
     setTimeout(()=>{
       setNameQuery(e.target.value)  
@@ -147,7 +126,7 @@ const SmallSearchbar = () => {
             {isHoveringUser && <HoverableDivLogin message={{para:`Email: ${credentials?.email}`,button:'Logout'}}/>}
           </button>
 
-          <button className="action-btn">
+          <button className="action-btn" onClick={() => navigate('/favourites')}>
             <ion-icon name="heart-outline"></ion-icon>
             <span className="count">{favourites.length}</span>
           </button>
