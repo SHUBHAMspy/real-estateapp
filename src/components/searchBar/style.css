@@ -25,10 +25,23 @@
 .search-dropdown-content{
   position: absolute;
   top: 110%;
+  left:0;
   padding: 15px;
   box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
   font-weight: 500;
+  width:auto;
+  z-index: 100;
+  background-color: var(--white);
+  border-radius: var(--border-radius-md);
+}
+.search-dropdown-btn .search-dropdown-content .content-item{
+  
+  padding: 10px;
+  cursor: pointer
+}
 
+.content-item:hover{
+  background: var(--cultured);
 }
 
 .search-button{
